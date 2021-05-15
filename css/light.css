@@ -1,0 +1,16 @@
+body {
+	margin: 0 auto;
+    width: 1200px;
+    background: #f4f4f4;
+}
+#theme-link {
+	height: 5%;
+    width: 13%;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    color: azure;
+    border: 0;
+    background: #7f0505;
+    margin-right: 4%;
+    font-family: "Indie Flower", cursive;
+}
