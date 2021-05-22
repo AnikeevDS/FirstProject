@@ -1,12 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 body {
-  margin: 0 auto;
-  width: 1200px;
-  background: #080303ea;
+	margin: 0 auto;
+    width: 1200px;
+    background: #f4f4f4;
+}
+
+#theme-link {
+    position: fixed;
+    height: 6vw;
+    width: 6%;
+    border-radius: 50%;
+    letter-spacing: 2px;
+    color: azure;
+    border: 0;
+    background-image: url(../img/gif.gif);
+    background-size: 100%;
+    z-index: 1;
 }
 
 .wrapper {
-  background-image: url(/img/header.png);
+  background-image: url(../img/header.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -113,15 +125,21 @@ a span:nth-child(4) {
   }
 }
 
+.theme {
+  position: relative;
+}
+
 button {
-  height: 30px;
-  width: 90px;
-  border-radius: 15px;
+  position: fixed;
+  height: 6vw;
+  width: 6%;
+  border-radius: 50%;
   letter-spacing: 2px;
   color: azure;
   border: 0;
-  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
-  font-family: "Indie Flower", cursive;
+  background-image: url(../img/gif.gif);
+  background-size: 100%;
+  z-index: 1;
 }
 
 .name {
@@ -199,6 +217,7 @@ button {
 .content {
   display: flex;
   justify-content: space-between;
+  margin-right: 8%;
 }
 .content .sidebar_center {
   height: 370px;
@@ -249,6 +268,8 @@ p {
   font-size: 160%;
   text-align: center;
   color: #8c7e7e;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .section .container .text-center p {
   padding-right: 2%;
@@ -273,21 +294,23 @@ p {
 }
 
 .section_track {
-  background-image: url(/img/track.png);
+  background-image: url(../img/track.png);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
+  padding-top: 15%;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0%;
+  padding-right: 0%;
   color: #7f0505;
 }
 .section_track ul {
   display: flex;
   overflow-y: hidden;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding-bottom: 10%;
+  margin-top: 0%;
+  margin-right: 3%;
 }
 .section_track ul::-webkit-scrollbar {
   height: 10px;
@@ -381,7 +404,14 @@ p {
   margin-left: auto;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+.prices td {
+  padding-left: 5%;
+  font-family: "Playball", cursive;
+  font-size: 110%;
+  text-align: justify;
+  color: #8c7e7e;
 }
 .prices .card {
   position: relative;
@@ -444,14 +474,121 @@ p {
   transform: translateY(0);
 }
 
+.band {
+  overflow: hidden;
+  margin-bottom: 3%;
+}
+.band h3 {
+  font-size: 160%;
+  text-align: center;
+  color: #7f0505;
+  transform: rotate(0deg);
+}
+.band .band_incline {
+  background-image: url(../img/line1.png);
+  top: -5%;
+  left: -5%;
+  transform: rotate(2deg);
+}
+.band .band_incline_1 {
+  background-image: url(../img/line1.png);
+  top: -5%;
+  left: -5%;
+  transform: rotate(-2deg);
+}
+
+.book {
+  background-image: url(../img/fon_2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Playball", cursive;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
+}
+.book .book_text {
+  width: 100%;
+}
+.book .book_text h3 {
+  font-size: 240%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0%;
+}
+.book .book_text p {
+  color: #fff;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 173%;
+}
+.book .book1 {
+  width: 25%;
+  height: 25%;
+}
+.book .book1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.certificate {
+  padding-top: 5%;
+}
+.certificate p {
+  font-family: "Playball", cursive;
+  font-size: 100%;
+  color: #8c7e7e;
+  text-align: justify;
+  overflow-y: scroll;
+}
+.certificate p::-webkit-scrollbar {
+  width: 10px;
+  background: #7f0505;
+  border-radius: 10px;
+}
+.certificate p::-webkit-scrollbar-thumb {
+  border-radius: 23px;
+  background: #e5e5e5;
+  width: 10px;
+}
+
+.youtube {
+  padding-top: 5%;
+  position: relative;
+  padding-bottom: 28.25%;
+  height: 0;
+  margin-bottom: 8%;
+}
+.youtube .video {
+  left: 5%;
+  padding-top: 5%;
+  position: absolute;
+  border-width: 0;
+  outline-width: 0;
+  width: 40%;
+  height: 67%;
+}
+.youtube .video1 {
+  right: 5%;
+  padding-top: 5%;
+  position: absolute;
+  width: 40%;
+  height: 67%;
+  border-width: 0px;
+  outline-width: 0px;
+}
+
 .contacts {
-  background-image: url(/img/fon.png);
+  background-image: url(../img/fon.png);
   background-size: 100%;
   background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   align-items: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 .contacts .map {
   width: 40%;
@@ -472,4 +609,9 @@ p {
   align-content: stretch;
   align-items: center;
   justify-content: space-around;
+}
+
+.test {
+  height: 100px;
+  width: 100px;
 }
